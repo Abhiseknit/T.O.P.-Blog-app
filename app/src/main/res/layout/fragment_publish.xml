@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Publish">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Publish">
+
+    <TextView
+        android:id="@+id/publishblogtop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Publish Blog"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="118dp"
+        android:layout_height="9dp"
+        android:layout_below="@+id/publishblogtop"
+        android:layout_alignStart="@id/publishblogtop"
+        android:background="@drawable/light_bg"
+        android:backgroundTint="#0B0A0A" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/view">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="18dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/stroke_bg"
+        android:layout_below="@id/view"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img_thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+
+        <View
+            android:id="@+id/bselectimage"
+            android:background="@drawable/stroke_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Select an image!"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/b_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/light_bg"
+            android:backgroundTint="@color/light_white"
+            android:hint="Title"
+            android:inputType="textPersonName"
+            android:padding="17dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/b_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/light_bg"
+            android:backgroundTint="@color/light_white"
+            android:hint="Description"
+            android:inputType="text"
+            android:minHeight="150dp"
+            android:padding="17dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/b_authorname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/light_bg"
+            android:backgroundTint="@color/light_white"
+            android:hint="Author Name"
+            android:inputType="textPersonName"
+            android:padding="17dp"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/btn_bpublish"
+            android:layout_width="200dp"
+            android:layout_height= "64dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/light_bg"
+            android:backgroundTint="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="PUBLISH" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
